@@ -1,0 +1,27 @@
+﻿body {
+			background: #222 url(./images/wood.jpg);
+			font: Georgia, Serif;
+		}
+		h3 {
+			font-size: 18px;
+			margin: 3px 5px;
+			color: #333;
+		}
+		#container {
+			width: 100%;
+			margin: auto;
+	    }
+	    #container > div {
+			-webkit-box-shadow: 0 4px 15px -5px #555;
+			box-shadow: 0 4px 15px -5px #555;
+			background-color: #fff;
+			width:220px;
+			padding:2px;
+			margin:5px;
+		}
+		#container > div img {
+			padding: 0px;
+			display: block;
+			width: 100%;
+		}
+	</style>

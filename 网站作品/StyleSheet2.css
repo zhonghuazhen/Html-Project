@@ -1,0 +1,13 @@
+﻿#bianda {
+float: right;
+}
+#bianda img {
+width: 210px;
+height: 210px;
+padding: 20px;
+}
+#bianda img:hover {
+width: 250px;
+height: 250px;
+padding: 0;
+}

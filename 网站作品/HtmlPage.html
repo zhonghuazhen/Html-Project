@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>除法计算</title>
+</head>
+<body>
+    <div>
+        请输入第一个数字
+        <input id="Text1" type="text" onblur="if (!/^\d+$/g.test(this.value)) { alert('非数字');this.select(); }" />
+    </div></br>
+    <div>
+        请输入第二个数字
+        <input id="Text2" type="text" onblur="if (!/^\d+$/g.test(this.value)) { alert('非数字');this.select(); }" />
+    </div>
+    <div><input id="Button1" type="button" value="确认" onclick="math()" /></div>
+    <script type="text/javascript">
+
+       function math()
+       {
+           var x =parseInt(document.getElementById("Text1").value);
+           var y = parseInt(document.getElementById("Text2").value);
+
+       
+           if (y == 0)
+           {
+               alert("y是分母，不能为0");}
+           else
+              alert("结果是："+x / y);
+
+       }
+
+    </script>
+
+    <h1>
+       </br>
+        </br>
+        </br>
+        </br>
+         <a href="HtmlPage2.html">抽奖页面</a>
+        <a href="Default.aspx">主页面</a>
+    </h1>
+</body>
+</html>

@@ -1,0 +1,111 @@
+﻿html {
+    background:url(images/backgroud1.jpg) repeat-y #0094ff
+  
+   
+}
+/*下面是下拉菜单功能*/
+nav {
+      margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    line-height: 1.5em;
+    color: #fff;
+    width: 100%;
+    display: table;
+}
+
+/* Removing padding, margin and "list-style" from the "ul",
+ * and adding "position:reltive" */
+nav ul {
+    padding:0;
+    margin:0;
+    list-style: none;
+    position: relative;
+    }
+
+/* Positioning the navigation items inline */
+nav ul li {
+    margin: 0px -7px 0 0;
+    display:inline-block;
+    background-color:#305db8;
+    }
+
+/* Styling the links */
+nav a {
+    display:block;
+    padding:0 10px;
+    color:#FFF;
+    font-size:30px;
+    line-height: 60px;
+    text-decoration:none;
+}
+
+/* Background color change on Hover */
+nav a:hover {
+    background-color: #000000;
+}
+/* Hide Dropdowns by Default
+ * and giving it a position of absolute */
+nav ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+}
+
+/* Display Dropdowns on Hover */
+nav ul li:hover > ul {
+    display:inherit;
+}
+
+/* Fisrt Tier Dropdown */
+nav ul ul li {
+    min-width:170px;
+    display:list-item;
+    position: relative;
+}
+/* Second, Third and more Tiers
+ * We move the 2nd and 3rd etc tier dropdowns to the left
+ * by the amount of the width of the first tier.
+*/
+nav ul ul ul {
+    position: absolute;
+    top:0;
+    left:100%;
+}
+        /* Change ' +' in order to change the Dropdown symbol */
+li > a:after { content:  ' +'; }
+li > a:only-child:after { content: ''; }
+/*下面的超链接功能*/
+a:link {
+ color: #000;
+ text-decoration: none;
+}
+a:visited {
+ color: #000;
+ text-decoration: none;
+}
+a:hover {
+ color: #FF0000;
+ text-decoration: underline;
+}
+a:active {
+ color: #bc2931;
+ text-decoration: none;
+}
+/*超链接颜色变化*/
+/* Giving a background-color to the nav container. */
+#bianda {
+float:left;
+}
+#bianda img {
+width: 300px;
+height: 300px;
+padding: 20px;
+}
+#bianda img:hover {
+width: 800px;
+height: 800px;
+padding: 0;
+}
+/*图片变大变小*/
